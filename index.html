@@ -6,6 +6,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script type="application/json" id="capabilities">{"required":["ai.infer","attachments.read","attachments.upload","edits.apply","storage"]}</script>
     <title>Athenaeum | English Studies Mastery Platform</title>
+    <meta name="description" content="Athenaeum is an English studies platform with lessons, quizzes, sentence diagramming and structure labs, and a history of the English language." />
+    <meta name="theme-color" content="#1c2b4f" />
+    <meta property="og:type" content="website" /><meta property="og:site_name" content="Athenaeum" />
+    <meta property="og:title" content="Athenaeum | English Studies Mastery Platform" />
+    <meta property="og:description" content="Lessons, quizzes, sentence labs and a history of English, synced to your account." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="manifest" href="site.webmanifest" />
+    
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiMxYzJiNGYiLz48cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iNTgiIGhlaWdodD0iNTgiIHJ4PSI3LjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M5YTI0YSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48cGF0aCBkPSJNMTIgMjUgMzIgMTFsMjAgMTR6IiBmaWxsPSIjZjRlZmUyIi8+PHBhdGggZD0iTTE3IDI2aDMwdjNIMTd6IiBmaWxsPSIjYzlhMjRhIi8+PGcgZmlsbD0iI2Y0ZWZlMiI+PHJlY3QgeD0iMTguNSIgeT0iMzEiIHdpZHRoPSI0LjUiIGhlaWdodD0iMTUiIHJ4PSIuNiIvPjxyZWN0IHg9IjI2LjUiIHk9IjMxIiB3aWR0aD0iNC41IiBoZWlnaHQ9IjE1IiByeD0iLjYiLz48cmVjdCB4PSIzNC41IiB5PSIzMSIgd2lkdGg9IjQuNSIgaGVpZ2h0PSIxNSIgcng9Ii42Ii8+PHJlY3QgeD0iNDIuNSIgeT0iMzEiIHdpZHRoPSI0LjUiIGhlaWdodD0iMTUiIHJ4PSIuNiIvPjxyZWN0IHg9IjE2IiB5PSI0NyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIxMyIgeT0iNTEiIHdpZHRoPSIzOCIgaGVpZ2h0PSIzIi8+PC9nPjxjaXJjbGUgY3g9IjMyIiBjeT0iMjAiIHI9IjIuNiIgZmlsbD0iIzFjMmI0ZiIvPjwvc3ZnPg==" />
     <!-- artifact-input-sha256:c6f101c82944d9856650b0b5aad36074f33d8c135f3335f2f45656709b487202 -->
     <meta name="color-scheme" content="light dark" data-default-mode="light" />
@@ -1499,14 +1507,14 @@ html.dark #ath-splash .as-btn{background:#a9bfee;border-color:#a9bfee;color:#141
 <script id="athenaeum-greeting-js">
 (function(){
   var FIG=[
-   {gr:"\u03a3\u03c9\u03ba\u03c1\u03ac\u03c4\u03b7\u03c2",en:"Socrates",q:"The unexamined life is not worth living.",src:"as reported in Plato\u2019s Apology",note:"Through Plato\u2019s dialogues, his habit of patient questioning became the root of critical reading and argument in English studies.",w:["grammar","from gramma, \u201cletter\u201d"]},
-   {gr:"\u03a0\u03bb\u03ac\u03c4\u03c9\u03bd",en:"Plato",q:"The beginning is the most important part of the work.",src:"Republic, Book II",note:"His Cratylus is the earliest surviving inquiry into how words acquire their meanings, an ancestor of etymology and semantics.",w:["etymology","from etymon, \u201ctrue sense,\u201d and logia, \u201cstudy\u201d"]},
-   {gr:"\u0391\u03c1\u03b9\u03c3\u03c4\u03bf\u03c4\u03ad\u03bb\u03b7\u03c2",en:"Aristotle",q:"All human beings by nature desire to know.",src:"Metaphysics, Book I",note:"His Poetics and Rhetoric underpin literary criticism and persuasive writing. Terms such as metaphor and tragedy still come from his vocabulary.",w:["rhetoric","from rhetorike, \u201cthe art of the orator\u201d"]},
-   {gr:"\u03a0\u03c1\u03c9\u03c4\u03b1\u03b3\u03cc\u03c1\u03b1\u03c2",en:"Protagoras",q:"Man is the measure of all things.",src:"Fragment, via Plato\u2019s Theaetetus",note:"Aristotle credits him as the first to distinguish the grammatical genders of nouns, an early step in the study of grammar.",w:["logic","from logos, \u201cword, reason\u201d"]},
-   {gr:"\u0394\u03b9\u03bf\u03bd\u03cd\u03c3\u03b9\u03bf\u03c2 \u03bf \u0398\u03c1\u03ac\u03be",en:"Dionysius Thrax",q:"Grammar is the practical knowledge of how poets and prose writers use language.",src:"Art of Grammar (paraphrased)",note:"His Art of Grammar set out the parts of speech that later grammarians adapted for Latin and, in time, for English.",w:["grammar","from gramma, \u201cletter\u201d"]},
-   {gr:"\u038c\u03bc\u03b7\u03c1\u03bf\u03c2",en:"Homer",q:"Sing to me, Muse, of the man of many turns.",src:"Odyssey, opening line (paraphrased)",note:"Epic poetry began the Western literary tradition, and English poets from Milton to Joyce wrote in answer to him.",w:["poetry","from poiesis, \u201cmaking\u201d"]},
-   {gr:"\u0399\u03c3\u03bf\u03ba\u03c1\u03ac\u03c4\u03b7\u03c2",en:"Isocrates",q:"It is speech that lifts human beings above the other creatures.",src:"Nicocles (paraphrased)",note:"His school of eloquence shaped the liberal education from which today\u2019s courses in composition and rhetoric descend.",w:["lexicon","from lexikon, \u201cof words\u201d"]},
-   {gr:"\u039b\u03bf\u03b3\u03b3\u03af\u03bd\u03bf\u03c2",en:"Longinus",q:"Sublimity is the echo of a great soul.",src:"On the Sublime (paraphrased)",note:"His treatise On the Sublime influenced English critics such as Addison and Burke.",w:["philosophy","from philosophia, \u201clove of wisdom\u201d"]}
+   {en:"Geoffrey Chaucer",q:"The life so short, the craft so long to learn.",src:"Parliament of Fowls (modernised)",note:"Often called the father of English literature, he wrote The Canterbury Tales in the London English that became the root of the modern standard.",w:["husband","from Old Norse husbondi, \u201chead of the household\u201d"]},
+   {en:"William Shakespeare",q:"Brevity is the soul of wit.",src:"Hamlet, Act II",note:"His plays helped fix the vocabulary and rhythms of Early Modern English, and many phrases he used are still in daily speech.",w:["window","from Old Norse vindauga, \u201cwind-eye\u201d"]},
+   {en:"Samuel Johnson",q:"Language is the dress of thought.",src:"Lives of the Poets",note:"His 1755 Dictionary of the English Language was the most influential English dictionary until the Oxford English Dictionary.",w:["dictionary","from Medieval Latin dictionarium, \u201ca collection of words\u201d"]},
+   {en:"Jane Austen",q:"There is no enjoyment like reading!",src:"Pride and Prejudice",note:"Her precise, ironic prose made the English sentence a study in tone, a model for students of style and grammar.",w:["sky","from Old Norse sky, \u201ccloud\u201d"]},
+   {en:"Francis Bacon",q:"Reading maketh a full man; writing an exact man.",src:"Of Studies",note:"His essays helped establish a plain, compact English prose suited to argument and science.",w:["beef","from Anglo-French boef, while the animal kept its Old English name, cow"]},
+   {en:"John Milton",q:"A good book is the precious life-blood of a master spirit.",src:"Areopagitica",note:"His epic Paradise Lost enriched English with Latinate vocabulary and defended free expression in print.",w:["alphabet","from Greek alpha and beta, the first two letters"]},
+   {en:"The Venerable Bede",q:"",src:"Ecclesiastical History of the English People, c. 731",note:"This Northumbrian monk told how the Angles, Saxons and Jutes came to Britain, and so recorded the earliest story of English itself.",w:["English","from Old English Englisc, \u201cof the Angles\u201d"]},
+   {en:"King Alfred the Great",q:"",src:"9th-century West Saxon king",note:"He promoted learning in English and had key Latin works translated, giving early English prose its first great push.",w:["algebra","from Arabic al-jabr, \u201creunion of broken parts\u201d"]}
   ];
   function h(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
   var shown=false;
@@ -1518,18 +1526,18 @@ html.dark #ath-splash .as-btn{background:#a9bfee;border-color:#a9bfee;color:#141
     var inner=h("div","as-in");
     var lg=document.createElement("img");lg.src=window.__LOGO;lg.alt="";lg.className="as-logo";
     inner.appendChild(lg);
-    inner.appendChild(h("div","as-hello","\u03a7\u03b1\u03af\u03c1\u03b5, \u03c6\u03b9\u03bb\u03bf\u03bc\u03b1\u03b8\u03ae\u03c2"));
-    inner.appendChild(h("div","as-trans","Chaire, philomath\u00eas \u00b7 Greetings, lover of learning"));
+    inner.appendChild(h("div","as-hello","Welcome, lover of learning"));
+    inner.appendChild(h("div","as-trans","Welcome to the Athenaeum \u00b7 English Studies"));
     inner.appendChild(h("div","as-rule"));
-    var q=h("blockquote","as-q");q.appendChild(h("p","as-qt","\u201c"+f.q+"\u201d"));
-    q.appendChild(h("footer","as-qa","\u2014 "+f.gr+" ("+f.en+"), "+f.src));
+    var q=h("blockquote","as-q");if(f.q)q.appendChild(h("p","as-qt","\u201c"+f.q+"\u201d"));
+    q.appendChild(h("footer","as-qa","\u2014 "+f.en+", "+f.src));
     inner.appendChild(q);
     inner.appendChild(h("p","as-note",f.note));
-    var wd=h("p","as-word");wd.appendChild(h("b","","Greek in your English: "));wd.appendChild(document.createTextNode(f.w[0]+", "+f.w[1]+"."));
+    var wd=h("p","as-word");wd.appendChild(h("b","","Word history: "));wd.appendChild(document.createTextNode(f.w[0]+", "+f.w[1]+"."));
     inner.appendChild(wd);
     var b=h("button","as-btn","Enter Athenaeum");b.type="button";
     inner.appendChild(b);
-    inner.appendChild(h("p","as-fine","Quotations are simplified translations."));
+    inner.appendChild(h("p","as-fine","Spelling modernised in places."));
     o.appendChild(inner);document.body.appendChild(o);
     var done=false;
     function enter(){
@@ -3832,6 +3840,312 @@ function build(){badge=h("b",{hidden:"hidden"});var lb=h("button",{id:"ar-launch
  document.body.appendChild(lb);document.body.appendChild(root);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!root.hidden)close()})}
 window.addEventListener("tracker:signin",function(e){var s=window.englishTrackerSupabase;if(!s||!s.client||!e.detail)return;if(me===e.detail.id&&root)return;sb=s.client;me=e.detail.id;if(!root)build();pend()});
 window.addEventListener("tracker:signout",function(){me=null;if(root)close()});
+})();
+</script>
+<style id="site-css">#ath-site{display:none;position:fixed;inset:0;z-index:2147482000;overflow:auto;background:#f6f4ee;color:#1c2b4f;font:17px/1.65 "Source Serif 4",Georgia,serif}
+html.ath-land-on #ath-site{display:block}html.dark #ath-site{background:#141a26;color:#e6e8ee}
+#ath-site *{box-sizing:border-box}#ath-site a{color:inherit}
+.as-nav{position:sticky;top:0;z-index:3;display:flex;align-items:center;gap:22px;padding:12px max(18px,calc((100% - 1040px)/2));background:#f6f4eef2;backdrop-filter:blur(6px);border-bottom:1px solid #cfd3dc}
+html.dark .as-nav{background:#141a26f2;border-color:#33405a}
+.as-nav .brand{display:flex;align-items:center;gap:10px;font:700 20px Georgia,serif;letter-spacing:.08em;text-decoration:none;margin-right:auto}.as-nav .brand img{width:34px;height:34px;border-radius:7px}
+.as-nav a.l{text-decoration:none;font-size:15px;opacity:.85}.as-nav a.l:hover{opacity:1;text-decoration:underline}
+.as-cta{display:inline-block;padding:10px 22px;border:1px solid #1c2b4f;border-radius:3px;background:#1c2b4f;color:#f6f4ee!important;font:600 14px/1 inherit;letter-spacing:.08em;text-transform:uppercase;text-decoration:none!important;cursor:pointer}
+.as-cta:hover{background:#2a3d6b}.as-cta.g{background:transparent;color:#1c2b4f!important}html.dark .as-cta{background:#5d7bc0;border-color:#5d7bc0;color:#fff!important}html.dark .as-cta.g{background:transparent;color:#c5d3f0!important;border-color:#c5d3f0}
+.as-w{max-width:1040px;margin:0 auto;padding:0 18px}
+.as-hero{text-align:center;padding:72px 0 56px}.as-hero h1{margin:0 0 10px;font:700 clamp(36px,7vw,60px)/1.1 Georgia,serif;letter-spacing:.04em}
+.as-hero .tag{margin:0 0 6px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#7a6a3a}html.dark .as-hero .tag{color:#d6b86a}
+.as-hero p.lead{max-width:640px;margin:18px auto 28px;font-size:19px}.as-hero .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.as-rule{width:84px;height:2px;margin:22px auto;background:#c9a24a}
+.as-sec{padding:44px 0;border-top:1px solid #cfd3dc}html.dark .as-sec{border-color:#33405a}
+.as-sec h2{margin:0 0 6px;font:700 30px Georgia,serif;text-align:center}.as-sec>.as-w>p.sub{text-align:center;margin:0 0 26px;opacity:.8}
+.as-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.as-card{padding:18px 20px;border:1px solid #cfd3dc;border-radius:6px;background:#fff}html.dark .as-card{background:#1b2332;border-color:#33405a}
+.as-card h3{margin:0 0 4px;font-size:18px}.as-card p{margin:0;font-size:15.5px;opacity:.85}.as-card .ic{font-size:26px}
+.as-steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.as-steps div{padding:16px 18px;border-left:3px solid #c9a24a}.as-steps b{display:block}
+.as-about p{max-width:720px;margin:0 auto 12px;text-align:center}
+.as-foot{padding:30px 18px;border-top:1px solid #cfd3dc;text-align:center;font-size:14px;opacity:.85}html.dark .as-foot{border-color:#33405a}
+.as-foot a{margin:0 8px}
+@media(max-width:640px){.as-nav a.l{display:none}.as-hero{padding:48px 0 36px}}
+</style>
+<style id="remember-css">#ath-remember-row,#ath-remember-bar{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;margin:10px 0 2px;text-align:left}
+#auth-card #ath-remember,#ath-remember-bar input{width:auto!important;min-width:0;margin:0!important;padding:0!important;accent-color:#1c2b4f}
+#ath-remember-bar{margin:0;font-size:12px;white-space:nowrap}
+html.dark #auth-card #ath-remember,html.dark #ath-remember-bar input{accent-color:#a9bfee}
+#ath-saved{margin:0 0 14px;text-align:left}#ath-saved[hidden]{display:none}
+#ath-saved h3{margin:0 0 8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;font-weight:600}
+.sv-row{display:flex;align-items:center;gap:8px;margin:6px 0}
+#auth-card .sv-go{flex:1;min-width:0;display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid #cfd3dc;border-radius:6px;background:transparent!important;color:inherit!important;text-align:left;cursor:pointer;font:inherit}
+#auth-card .sv-go:hover,#auth-card .sv-go:focus-visible{border-color:#1c2b4f;background:#1c2b4f14!important}
+html.dark #auth-card .sv-go{border-color:#3b4864}html.dark #auth-card .sv-go:hover{border-color:#a9bfee}
+.sv-av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#1c2b4f;color:#f6f4ee;font-weight:700;font-size:16px}
+.sv-t{min-width:0}.sv-t b{display:block;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sv-t small{display:block;font-size:12px;opacity:.7;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#auth-card .sv-x{flex:none;width:30px;height:30px;padding:0;border:0;border-radius:50%;background:transparent!important;color:inherit!important;opacity:.55;cursor:pointer;font-size:15px}#auth-card .sv-x:hover{opacity:1}
+#ath-saved-or{margin:10px 0 4px;text-align:center;font-size:12px;opacity:.6;letter-spacing:.1em;text-transform:uppercase}
+</style>
+<script id="remember-js">(function(){
+"use strict";
+var SK="athenaeum:saved-accounts",PK="athenaeum:remember-pref",KEEP=["settings"],MAX=5;
+var D=document;
+function rd(){try{var a=JSON.parse(localStorage.getItem(SK)||"[]");return Array.isArray(a)?a:[]}catch(e){return[]}}
+function wr(a){try{localStorage.setItem(SK,JSON.stringify(a.slice(0,MAX)))}catch(e){}}
+function pref(){try{return localStorage.getItem(PK)==="1"}catch(e){return false}}
+function setPref(v){try{localStorage.setItem(PK,v?"1":"0")}catch(e){}D.querySelectorAll(".ath-rem-cb").forEach(function(c){c.checked=v})}
+function h(t,c,x){var e=D.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+var card=D.getElementById("auth-card"),form=D.getElementById("auth-form"),submit=D.getElementById("auth-submit"),bar=D.getElementById("auth-account-bar"),logout=D.getElementById("auth-logout"),msg=D.getElementById("auth-message");
+if(!card||!form||!submit||!bar||!logout)return;
+// opt-in checkboxes (login form + account bar)
+var row=h("label","");row.id="ath-remember-row";var cb=h("input","ath-rem-cb");cb.type="checkbox";row.appendChild(cb);row.appendChild(D.createTextNode("Keep me on this device after logging out"));
+form.insertBefore(row,submit);
+var bl=h("label","");bl.id="ath-remember-bar";bl.title="Stay one click away from signing back in after you log out";var cb2=h("input","ath-rem-cb");cb2.type="checkbox";bl.appendChild(cb2);bl.appendChild(D.createTextNode("Remember me"));
+bar.insertBefore(bl,logout);
+[cb,cb2].forEach(function(c){c.checked=pref();c.addEventListener("change",function(){setPref(c.checked);if(!c.checked)hint()})});
+function hint(){}
+// saved accounts list
+var box=h("div","");box.id="ath-saved";box.hidden=true;card.insertBefore(box,form);
+var orr=h("div","","or sign in with a password");orr.id="ath-saved-or";orr.hidden=true;card.insertBefore(orr,form);
+function say(t,ok){if(msg){msg.textContent=t;msg.style.color=ok?"#28734c":"#9a3150"}}
+function paint(){
+ var a=rd();box.innerHTML="";box.hidden=orr.hidden=!a.length;if(!a.length)return;
+ box.appendChild(h("h3","","Welcome back, choose your profile"));
+ a.forEach(function(u,i){
+  var r=h("div","sv-row"),b=h("button","sv-go");b.type="button";
+  b.appendChild(h("span","sv-av",(u.name||u.username||u.email||"?").trim().charAt(0).toUpperCase()));
+  var t=h("span","sv-t");t.appendChild(h("b","",u.name||u.username||u.email));t.appendChild(h("small","",u.rt?u.email:u.email+" \u00b7 password needed"));b.appendChild(t);
+  b.onclick=function(){go(i)};
+  var x=h("button","sv-x","\u2715");x.type="button";x.title="Remove from this device";x.setAttribute("aria-label","Forget "+(u.email||"account"));
+  x.onclick=function(){var l=rd();l.splice(i,1);wr(l);paint()};
+  r.appendChild(b);r.appendChild(x);box.appendChild(r)});
+}
+function client(){return window.englishTrackerSupabase&&window.englishTrackerSupabase.client}
+async function go(i){
+ var l=rd(),u=l[i],c=client();if(!u||!c)return;
+ var em=D.getElementById("auth-email"),pw=D.getElementById("auth-password");
+ if(!u.rt){em.value=u.email;pw.focus();say("Enter your password to continue.",false);return}
+ say("Signing in as "+(u.name||u.email)+"\u2026",true);
+ try{
+  var r=await c.auth.refreshSession({refresh_token:u.rt});
+  if(r.error||!r.data||!r.data.session)throw r.error||new Error("expired");
+  var l2=rd(),k=l2.findIndex(function(x){return x.id===u.id});if(k>-1){l2[k].rt=null;wr(l2)}
+  say("Signed in. Loading your saved tracker\u2026",true);
+ }catch(e){
+  var l3=rd(),k2=l3.findIndex(function(x){return x.id===u.id});if(k2>-1){l3[k2].rt=null;wr(l3)}
+  paint();em.value=u.email;pw.focus();say("That session has expired. Please enter your password.",false);
+ }
+}
+function skey(){return Object.keys(localStorage).filter(function(k){return/^sb-.+-auth-token/.test(k)||/^sb-.+-code-verifier$/.test(k)})}
+// hook client once created
+var hooked=false,t0=setInterval(function(){
+ var c=client();if(!c||hooked)return;hooked=true;clearInterval(t0);
+ var orig=c.auth.signOut.bind(c.auth);
+ c.auth.onAuthStateChange(function(ev,s){
+  if(s&&s.user&&pref()&&(ev==="SIGNED_IN"||ev==="INITIAL_SESSION")){
+   var u=s.user,m=u.user_metadata||{},l=rd(),k=l.findIndex(function(x){return x.id===u.id});
+   var e={id:u.id,email:u.email||"",name:m.full_name||"",username:m.username||"",rt:null};
+   if(k>-1){e.rt=null;l.splice(k,1)}l.unshift(e);wr(l)}
+ });
+ c.auth.signOut=async function(opts){
+  if(!pref())return orig(opts);
+  try{
+   var g=await c.auth.getSession(),s=g.data&&g.data.session;
+   if(!s||!s.user)return orig(opts);
+   var ok=true;try{ok=window.__englishTrackerSaveNow?await window.__englishTrackerSaveNow():true}catch(e){ok=false}
+   if(!ok)return{error:new Error("Your progress could not be synced, so you were not logged out. Check your connection and try again.")};
+   var u=s.user,m=u.user_metadata||{},l=rd().filter(function(x){return x.id!==u.id});
+   l.unshift({id:u.id,email:u.email||"",name:m.full_name||"",username:m.username||"",rt:s.refresh_token});wr(l);
+   skey().forEach(function(k){try{localStorage.removeItem(k)}catch(e){}});
+   try{Object.keys(localStorage).forEach(function(k){if(k.indexOf("english-mastery:")===0&&KEEP.indexOf(k.slice(16))<0)localStorage.removeItem(k)})}catch(e){}
+   setTimeout(function(){location.reload()},500);
+   return{error:null};
+  }catch(e){return orig(opts)}
+ };
+},150);
+paint();
+})();
+</script>
+<style id="hub-css">#ms-launch,#ar-launch,#dl-launch,#sl-launch{display:none!important}
+#hub-fab{position:fixed;z-index:9991;top:50%;right:0;width:54px;height:54px;margin:0;padding:0;border:1px solid var(--color-primary,#1c2b4f);border-radius:50%;background:var(--color-primary,#1c2b4f);color:#fff;display:grid;place-items:center;cursor:grab;box-shadow:0 6px 22px #0006;touch-action:none;opacity:.88;transition:opacity .2s,transform .2s,left .25s,right .25s}
+#hub-fab:hover,#hub-fab:focus-visible,#hub-fab.drag{opacity:1;transform:scale(1.06)}#hub-fab.drag{cursor:grabbing;transition:none}
+#hub-fab svg{width:26px;height:26px;pointer-events:none}
+#hub-fab .hub-dot{position:absolute;top:3px;right:3px;min-width:16px;height:16px;padding:0 4px;border-radius:9px;background:#d6336c;color:#fff;font:700 10px/16px sans-serif;text-align:center}
+#hub-fab .hub-dot[hidden]{display:none}
+html.auth-pending #hub-fab,html.auth-pending #hub-panel,html.ath-greet #hub-fab{display:none!important}
+#hub-scrim{position:fixed;inset:0;z-index:9992;background:#0006;opacity:0;visibility:hidden;transition:opacity .25s}
+#hub-scrim.on{opacity:1;visibility:visible}
+#hub-panel{position:fixed;z-index:9993;top:0;bottom:0;width:min(330px,86vw);display:flex;flex-direction:column;background:var(--color-page,#fff);color:var(--color-foreground,#1c2b4f);border:1px solid var(--border,#cfd3dc);box-shadow:0 0 40px #0005;transition:transform .28s ease;font:15px/1.4 var(--font-sans,"Source Serif 4",Georgia,serif)}
+#hub-panel.r{right:0;transform:translateX(105%)}#hub-panel.l{left:0;transform:translateX(-105%)}#hub-panel.on{transform:none}
+#hub-panel header{display:flex;align-items:center;gap:8px;padding:16px 16px 12px;border-bottom:1px solid var(--border,#cfd3dc)}
+#hub-panel h2{flex:1;margin:0;font:700 19px var(--font-display,Georgia,serif);letter-spacing:.04em}
+#hub-panel .hub-x{border:0;background:transparent;color:inherit;font-size:20px;cursor:pointer;padding:4px 8px}
+#hub-list{flex:1;overflow:auto;padding:10px;display:flex;flex-direction:column;gap:8px}
+#hub-list small.sec{margin:8px 4px 0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.65}
+.hub-it{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid var(--border,#cfd3dc);border-radius:6px;background:transparent;color:inherit;text-align:left;font:inherit;cursor:pointer}
+.hub-it:hover:enabled,.hub-it:focus-visible{border-color:var(--color-primary,#1c2b4f);background:var(--color-tint,#eef1f7)}.hub-it:disabled{opacity:.45;cursor:default}
+.hub-it .ic{font-size:22px;width:30px;text-align:center}.hub-it b{display:block;font-weight:600}.hub-it span.d{display:block;font-size:12.5px;opacity:.7}
+.hub-it .bd{margin-left:auto;min-width:20px;height:20px;padding:0 6px;border-radius:10px;background:#d6336c;color:#fff;font:700 12px/20px sans-serif;text-align:center}.hub-it .bd[hidden]{display:none}
+#hub-panel footer{padding:10px 16px;border-top:1px solid var(--border,#cfd3dc);font-size:12px;opacity:.65}
+/* History of English */
+#he-root{position:fixed;inset:0;z-index:9995;overflow:auto;background:var(--color-background,#f6f4ee);color:var(--color-foreground,#1c2b4f);font:17px/1.6 var(--font-sans,"Source Serif 4",Georgia,serif)}
+#he-root[hidden]{display:none}#he-root *{box-sizing:border-box}
+.he-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:12px;padding:12px 18px;background:var(--color-page,#fff);border-bottom:1px solid var(--border,#cfd3dc)}
+.he-top h1{flex:1;margin:0;font:700 22px var(--font-display,Georgia,serif);font-variant:small-caps;letter-spacing:.04em}
+.he-b{border:1px solid var(--color-primary,#1c2b4f);border-radius:4px;padding:8px 14px;background:transparent;color:var(--color-primary,#1c2b4f);font:600 14px inherit;cursor:pointer}
+.he-b.on,.he-b:hover{background:var(--color-primary,#1c2b4f);color:#fff}
+.he-main{max-width:820px;margin:0 auto;padding:24px 18px 70px}
+.he-lead{font-size:18px;margin:0 0 18px}
+.he-line{display:flex;gap:0;margin:18px 0;border-radius:4px;overflow:hidden;border:1px solid var(--border,#cfd3dc)}
+.he-line button{flex:1;min-width:0;padding:12px 6px;border:0;border-right:1px solid var(--border,#cfd3dc);background:var(--color-page,#fff);color:inherit;font:inherit;font-size:13px;cursor:pointer;text-align:center}
+.he-line button:last-child{border-right:0}.he-line button b{display:block;font-size:14px}.he-line button.on{background:var(--color-primary,#1c2b4f);color:#fff}
+.he-card{border:1px solid var(--border,#cfd3dc);border-radius:6px;background:var(--color-page,#fff);padding:18px 20px;margin:14px 0}
+.he-card h2{margin:0 0 4px;font:700 26px var(--font-display,Georgia,serif)}.he-card h3{margin:16px 0 6px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#7a6a3a}
+html.dark .he-card h3{color:#d6b86a}
+.he-yrs{opacity:.7;margin:0 0 10px;font-style:italic}.he-card ul{margin:0;padding-left:20px}.he-card li{margin:5px 0}
+.he-ex{margin:8px 0;padding:10px 14px;border-left:3px solid #c9a24a;background:var(--color-tint,#eef1f7)}.he-ex q{display:block;font-size:19px;font-style:italic;quotes:none}.he-ex small{display:block;margin-top:4px;opacity:.8}
+.he-tbl{width:100%;border-collapse:collapse;font-size:15px}.he-tbl th,.he-tbl td{padding:9px 10px;border-bottom:1px solid var(--border,#cfd3dc);text-align:left;vertical-align:top}.he-tbl th{width:30%;font-weight:600}
+.he-wrap{overflow-x:auto}.he-pill{display:inline-block;margin:3px 4px 3px 0;padding:3px 10px;border:1px solid var(--border,#cfd3dc);border-radius:99px;font-size:14px}
+@media(max-width:600px){.he-line button{font-size:11px;padding:10px 2px}.he-top h1{font-size:18px}}
+</style>
+<script id="site-js">(function(){
+"use strict";
+/* ===== Edit these before launch ===== */
+var SITE={name:"Athenaeum",contactEmail:"",year:new Date().getFullYear()};
+var R=document.documentElement,K="ath-landing-seen";
+function seen(){try{return sessionStorage.getItem(K)==="1"}catch(e){return false}}
+function h(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+var F=[["\uD83D\uDCDA","Structured lessons","Work through English studies at your own pace with lessons, notes and progress tracking."],
+["\uD83C\uDFC6","Quiz Arena","Test yourself, take on challenges and climb the leaderboard."],
+["\u270F\uFE0F","Sentence Diagramming Lab","See how sentences are built by diagramming them step by step."],
+["\uD83E\uDDE9","Sentence Structure Lab","Practise clauses and structure with levels that build to a certificate."],
+["\uD83D\uDCDC","History of English","Follow the language from Old English to the World Englishes of today."],
+["\u2601\uFE0F","Cloud sync","Sign in on any device and pick up exactly where you stopped."]];
+var el=h("div","");el.id="ath-site";el.setAttribute("role","region");el.setAttribute("aria-label","Athenaeum home");
+var nav=h("nav","as-nav");nav.setAttribute("aria-label","Main");
+var br=h("a","brand");br.href="#home";var lg=document.createElement("img");lg.src=window.__LOGO||"";lg.alt="";br.appendChild(lg);br.appendChild(document.createTextNode(SITE.name));nav.appendChild(br);
+[["Features","features"],["How it works","how"],["About","about"]].forEach(function(l){var a=h("a","l",l[0]);a.href="#"+l[1];a.onclick=function(e){e.preventDefault();var t=el.querySelector("#as-"+l[1]);if(t)t.scrollIntoView({behavior:"smooth"})};nav.appendChild(a)});
+function enter(e){if(e)e.preventDefault();try{sessionStorage.setItem(K,"1")}catch(x){}R.classList.remove("ath-land-on");var i=document.getElementById("auth-email");if(i)setTimeout(function(){i.focus()},50)}
+var si=h("a","as-cta","Sign in");si.href="#signin";si.onclick=enter;nav.appendChild(si);el.appendChild(nav);
+var hero=h("header","as-hero as-w");hero.id="as-home";
+hero.appendChild(h("p","tag","English Studies Mastery Platform"));hero.appendChild(h("h1","",SITE.name));hero.appendChild(h("div","as-rule"));
+hero.appendChild(h("p","lead","A study home for learners of English: lessons, quizzes, sentence labs and a history of the language, saved to your account so you can continue on any device."));
+var row=h("div","row"),c1=h("a","as-cta","Get started"),c2=h("a","as-cta g","Learn more");c1.href=c2.href="#";c1.onclick=function(e){enter(e);var t=document.getElementById("auth-toggle");if(t&&t.textContent.indexOf("Create")===0)t.click()};
+c2.onclick=function(e){e.preventDefault();el.querySelector("#as-features").scrollIntoView({behavior:"smooth"})};row.appendChild(c1);row.appendChild(c2);hero.appendChild(row);el.appendChild(hero);
+var s1=h("section","as-sec");s1.id="as-features";var w1=h("div","as-w");w1.appendChild(h("h2","","Everything you need to study English"));w1.appendChild(h("p","sub","One account, one place for practice and progress."));
+var g=h("div","as-grid");F.forEach(function(f){var c=h("div","as-card");c.appendChild(h("div","ic",f[0]));c.appendChild(h("h3","",f[1]));c.appendChild(h("p","",f[2]));g.appendChild(c)});w1.appendChild(g);s1.appendChild(w1);el.appendChild(s1);
+var s2=h("section","as-sec");s2.id="as-how";var w2=h("div","as-w");w2.appendChild(h("h2","","How it works"));w2.appendChild(h("p","sub","Start in under a minute."));
+var st=h("div","as-steps");[["1. Create an account","Choose a username and sign up with your email."],["2. Learn and practise","Open lessons, play quizzes and try the sentence labs from the study menu."],["3. Carry on anywhere","Your progress syncs to your account, and you can stay one click from signing back in on your own device."]].forEach(function(s){var d=h("div");d.appendChild(h("b","",s[0]));d.appendChild(document.createTextNode(s[1]));st.appendChild(d)});w2.appendChild(st);s2.appendChild(w2);el.appendChild(s2);
+var s3=h("section","as-sec as-about");s3.id="as-about";var w3=h("div","as-w");w3.appendChild(h("h2","","About"));
+w3.appendChild(h("p","",SITE.name+" is an English studies platform built around clear explanation and steady practice. It brings grammar, sentence structure, vocabulary and the history of the language together in one calm, academic workspace."));
+var ca=h("p","");var go=h("a","as-cta","Sign in or create an account");go.href="#signin";go.onclick=enter;ca.appendChild(go);w3.appendChild(ca);s3.appendChild(w3);el.appendChild(s3);
+var ft=h("footer","as-foot");ft.appendChild(h("div","","\u00a9 "+SITE.year+" "+SITE.name+". All rights reserved."));
+if(SITE.contactEmail){var m=h("a","","Contact");m.href="mailto:"+SITE.contactEmail;ft.appendChild(m)}
+el.appendChild(ft);document.body.appendChild(el);
+window.addEventListener("tracker:signout",function(){if(!seen())R.classList.add("ath-land-on")});
+window.addEventListener("tracker:signin",function(){R.classList.remove("ath-land-on")});
+})();
+</script>
+<script id="hub-js">(function(){
+"use strict";
+var D=document,KEY="athenaeum:hub";
+function h(t,c,x){var e=D.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+var P=[
+{id:"pre",n:"Origins",y:"before 450",t:"From Indo-European to Germanic",
+ s:"English belongs to the West Germanic branch of the Indo-European family, which grew out of Proto-Germanic and, much earlier, Proto-Indo-European, spoken some 6,000 years ago.",
+ k:["Related languages include German, Dutch and Frisian; Frisian is English\u2019s closest living relative.","Latin and Celtic (Brittonic) were the main languages of Roman Britain; few Celtic words survived in English, mostly place and river names such as Thames and Avon.","Germanic peoples (Angles, Saxons, Jutes) crossed the North Sea from about the mid-5th century, a date Bede traditionally gives as 449."],
+ x:null,w:["father","mother","water","house"]},
+{id:"oe",n:"Old English",y:"c. 450 \u2013 1150",t:"The Anglo-Saxon tongue",
+ s:"A heavily inflected language with grammatical gender and four cases. To a modern reader it looks like a foreign language.",
+ k:["Early writing used runes; after St Augustine\u2019s mission in 597, the Latin alphabet was adopted, with extra letters \u00fe (thorn), \u00f0 (eth) and \u00e6 (ash).","Four main dialects: Northumbrian, Mercian, West Saxon and Kentish. West Saxon became the written standard under King Alfred (r. 871\u2013899).","Viking raids began in 793 and the Danelaw followed; Old Norse gave English words such as sky, egg, window, they, them and their.","Major texts: Beowulf (manuscript c. 1000), the Anglo-Saxon Chronicle and Bede\u2019s history, in Latin and later translated."],
+ x:["Hw\u00e6t! We Gardena in geardagum, \u00feeodcyninga, \u00ferym gefrunon.","Beowulf, opening. Roughly: \u201cListen! We have heard of the glory of the Spear-Danes\u2019 kings in days gone by.\u201d"],w:["king","sheep","earth","friend","sky (Norse)"]},
+{id:"me",n:"Middle English",y:"c. 1150 \u2013 1500",t:"After the Norman Conquest",
+ s:"After 1066, French became the language of court, law and church administration, while English survived as the speech of most people and lost much of its inflection.",
+ k:["Thousands of French words entered: justice, court, army, beef, pork, mutton, art. English kept the farm animals (cow, pig, sheep) while French named the meat.","English regained prestige; the Statute of Pleading (1362) made it the language of the law courts, and Parliament was first opened in English that year.","Chaucer wrote The Canterbury Tales in the late 1300s in London English; Wycliffe\u2019s Bible (c. 1380s) was an early English translation.","The Great Vowel Shift began around 1400, and William Caxton set up the first English printing press in 1476."],
+ x:["Whan that Aprill with his shoures soote / The droghte of March hath perced to the roote","Chaucer, Canterbury Tales. \u201cWhen April with its sweet showers has pierced the drought of March to the root.\u201d"],w:["justice","beef","parliament","people","crown"]},
+{id:"em",n:"Early Modern",y:"c. 1500 \u2013 1700",t:"Print, Renaissance and Shakespeare",
+ s:"Printing spread a standard written form, spelling began to settle, and the Renaissance flooded English with Latin and Greek vocabulary.",
+ k:["The Great Vowel Shift reshaped long vowels, which is why English spelling often fails to match modern pronunciation.","Scholars coined or borrowed many \u201cinkhorn\u201d terms from Latin and Greek; some stayed (education, atmosphere) and others faded.","Shakespeare (1564\u20131616) wrote in this English, and the King James Bible (1611) shaped idiom for centuries.","Cawdrey\u2019s Table Alphabeticall (1604) is usually called the first English dictionary. Thou gradually gave way to you.","Colonies such as Jamestown (1607) began to carry English across the Atlantic."],
+ x:["All the world\u2019s a stage, / And all the men and women merely players.","Shakespeare, As You Like It (c. 1599)."],w:["education","atmosphere","thou / you","dictionary"]},
+{id:"lm",n:"Modern English",y:"1700 \u2013 today",t:"Standards, empire and a world language",
+ s:"Dictionaries and grammars fixed standards, while trade, empire and later technology made English a truly global language.",
+ k:["Johnson\u2019s Dictionary (1755) and Webster\u2019s American Dictionary (1828) set British and American norms; the Oxford English Dictionary was begun in 1857 and finished in 1928.","Science and industry produced words from Greek and Latin roots (telephone, biology, oxygen).","British expansion planted English in India, Africa, Australasia and the Caribbean; after 1898 and the arrival of American teachers in 1901, English took root in the Philippines too.","Today English is used by well over a billion people, most of them as a second language, with many World Englishes: American, Indian, Nigerian, Singaporean, Philippine and others.","Internet culture keeps adding words (email, hashtag, selfie) and accelerating change."],
+ x:["It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.","Jane Austen, Pride and Prejudice (1813)."],w:["telephone","biology","email","selfie","robot (Czech)"]}
+];
+var LP=[["Old English (c. 1000)","F\u00e6der ure \u00fe\u016b \u00fee eart on heofonum, s\u012b \u00fe\u012bn nama gehalgod."],["Middle English (Wycliffe, c. 1389)","Oure fadir that art in heuenes, halewid be thi name."],["Early Modern (King James, 1611)","Our Father which art in heaven, Hallowed be thy name."],["Modern English","Our Father in heaven, hallowed be your name."]];
+var root,body,cur=0;
+function build(){
+ root=h("div","");root.id="he-root";root.hidden=true;root.setAttribute("role","dialog");root.setAttribute("aria-label","History of the English language");
+ var top=h("div","he-top");top.appendChild(h("h1","","History of the English Language"));
+ var cl=h("button","he-b","\u2715 Close");cl.type="button";cl.onclick=close;top.appendChild(cl);
+ body=h("div","he-main");root.appendChild(top);root.appendChild(body);D.body.appendChild(root);
+ D.addEventListener("keydown",function(e){if(e.key==="Escape"&&!root.hidden)close()});
+}
+function render(){
+ body.innerHTML="";
+ body.appendChild(h("p","he-lead","English began as the dialects of a few Germanic tribes and became the most widely used second language on Earth. Choose an era to follow the story."));
+ var line=h("div","he-line");
+ P.forEach(function(p,i){var b=h("button",i===cur?"on":"");b.type="button";b.appendChild(h("b","",p.n));b.appendChild(D.createTextNode(p.y));b.onclick=function(){cur=i;render();root.scrollTop=0};line.appendChild(b)});
+ body.appendChild(line);
+ var p=P[cur],c=h("div","he-card");
+ c.appendChild(h("h2","",p.n));c.appendChild(h("p","he-yrs",p.y+" \u00b7 "+p.t));c.appendChild(h("p","",p.s));
+ c.appendChild(h("h3","","Key developments"));var ul=h("ul");p.k.forEach(function(k){ul.appendChild(h("li","",k))});c.appendChild(ul);
+ if(p.x){c.appendChild(h("h3","","In the language of the time"));var ex=h("div","he-ex");ex.appendChild(h("q","",p.x[0]));ex.appendChild(h("small","",p.x[1]));c.appendChild(ex)}
+ c.appendChild(h("h3","","Words from this story"));var w=h("div");p.w.forEach(function(x){w.appendChild(h("span","he-pill",x))});c.appendChild(w);
+ var nav=h("div");nav.style.cssText="display:flex;gap:10px;margin-top:18px";
+ var pv=h("button","he-b","\u2190 Previous");pv.type="button";pv.disabled=cur===0;pv.onclick=function(){cur--;render();root.scrollTop=0};
+ var nx=h("button","he-b on","Next era \u2192");nx.type="button";nx.disabled=cur===P.length-1;nx.style.marginLeft="auto";nx.onclick=function(){cur++;render();root.scrollTop=0};
+ nav.appendChild(pv);nav.appendChild(nx);c.appendChild(nav);body.appendChild(c);
+ var t=h("div","he-card");t.appendChild(h("h2","","The Lord\u2019s Prayer through time"));t.appendChild(h("p","he-yrs","The same opening line, four stages of English"));
+ var wrap=h("div","he-wrap"),tb=h("table","he-tbl");LP.forEach(function(r){var tr=h("tr");tr.appendChild(h("th","",r[0]));tr.appendChild(h("td","",r[1]));tb.appendChild(tr)});
+ wrap.appendChild(tb);t.appendChild(wrap);body.appendChild(t);
+}
+function open(){if(!root)build();render();root.hidden=false;D.body.style.overflow="hidden";root.scrollTop=0}
+function close(){root.hidden=true;D.body.style.overflow=""}
+// ---------- Hub ----------
+var ITEMS=[
+{sec:"Practice"},
+{ic:"\uD83C\uDFC6",t:"Quiz Arena",d:"Play quizzes and challenges",id:"ar-launch"},
+{ic:"\uD83D\uDCAC",t:"Messages",d:"Chat with friends and classmates",id:"ms-launch"},
+{sec:"Labs"},
+{ic:"\u270F\uFE0F",t:"Sentence Diagramming Lab",d:"Diagram sentences step by step",id:"dl-launch"},
+{ic:"\uD83E\uDDE9",t:"Sentence Structure Lab",d:"Practise clauses and structure",id:"sl-launch"},
+{sec:"Read"},
+{ic:"\uD83D\uDCDC",t:"History of English",d:"From Old English to World Englishes",fn:open}
+];
+var fab,panel,scrim,list,refs=[],side="r",ty=.5;
+function load(){try{var s=JSON.parse(localStorage.getItem(KEY)||"{}");if(s.side==="l"||s.side==="r")side=s.side;if(typeof s.y==="number")ty=Math.min(.92,Math.max(.08,s.y))}catch(e){}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({side:side,y:ty}))}catch(e){}}
+function place(){fab.style.top=Math.round(ty*innerHeight-27)+"px";fab.style.left=side==="l"?"6px":"";fab.style.right=side==="r"?"6px":"";fab.style.bottom="auto";panel.className=(panel.classList.contains("on")?"on ":"")+side}
+function isOpen(){return panel.classList.contains("on")}
+function setOpen(o){panel.classList.toggle("on",o);scrim.classList.toggle("on",o);fab.setAttribute("aria-expanded",o?"true":"false");if(o)sync()}
+function sync(){var total=0;refs.forEach(function(r){if(!r.id)return;var el=D.getElementById(r.id),ok=!!el;r.b.disabled=!ok;var bd=el&&el.querySelector(".ms-badge,b"),n=bd&&!bd.hidden?bd.textContent.trim():"";r.bd.textContent=n;r.bd.hidden=!n;if(n&&r.id==="ar-launch"||n&&r.id==="ms-launch")total+=parseInt(n)||1});
+ var dot=fab.querySelector(".hub-dot");dot.textContent=total>99?"99+":total;dot.hidden=!total}
+function init(){
+ load();
+ fab=h("button","");fab.id="hub-fab";fab.type="button";fab.setAttribute("aria-label","Open study menu");fab.setAttribute("aria-haspopup","dialog");fab.setAttribute("aria-expanded","false");
+ fab.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 3v5.8M12 15.2V21M3 12h5.8M15.2 12H21"/></svg><span class="hub-dot" hidden></span>';
+ scrim=h("div","");scrim.id="hub-scrim";
+ panel=h("aside","");panel.id="hub-panel";panel.setAttribute("role","dialog");panel.setAttribute("aria-label","Study menu");
+ var hd=h("header"),x=h("button","hub-x","\u2715");x.type="button";x.setAttribute("aria-label","Close menu");hd.appendChild(h("h2","","Study Menu"));hd.appendChild(x);
+ list=h("div","");list.id="hub-list";
+ ITEMS.forEach(function(it){
+  if(it.sec){list.appendChild(h("small","sec",it.sec));return}
+  var b=h("button","hub-it");b.type="button";b.appendChild(h("span","ic",it.ic));
+  var m=h("span","");m.appendChild(h("b","",it.t));m.appendChild(h("span","d",it.d));b.appendChild(m);var bd=h("span","bd");bd.hidden=true;b.appendChild(bd);
+  b.onclick=function(){setOpen(false);setTimeout(function(){if(it.fn)return it.fn();var el=D.getElementById(it.id);if(el)el.click()},230)};
+  list.appendChild(b);refs.push({id:it.id,b:b,bd:bd});
+ });
+ panel.appendChild(hd);panel.appendChild(list);panel.appendChild(h("footer","","Drag the round button to move it to any edge."));
+ D.body.appendChild(scrim);D.body.appendChild(panel);D.body.appendChild(fab);place();
+ x.onclick=function(){setOpen(false)};scrim.onclick=function(){setOpen(false)};
+ D.addEventListener("keydown",function(e){if(e.key==="Escape"&&isOpen()){setOpen(false);fab.focus()}});
+ // drag & snap
+ var sx,sy,ox,oy,moved=false,down=false;
+ fab.addEventListener("pointerdown",function(e){down=true;moved=false;sx=e.clientX;sy=e.clientY;var r=fab.getBoundingClientRect();ox=r.left;oy=r.top;fab.setPointerCapture(e.pointerId)});
+ fab.addEventListener("pointermove",function(e){if(!down)return;var dx=e.clientX-sx,dy=e.clientY-sy;if(!moved&&Math.hypot(dx,dy)<6)return;moved=true;fab.classList.add("drag");fab.style.right="auto";fab.style.left=Math.min(innerWidth-60,Math.max(6,ox+dx))+"px";fab.style.top=Math.min(innerHeight-60,Math.max(6,oy+dy))+"px"});
+ function end(e){if(!down)return;down=false;fab.classList.remove("drag");if(moved){var r=fab.getBoundingClientRect();side=r.left+27<innerWidth/2?"l":"r";ty=Math.min(.92,Math.max(.08,(r.top+27)/innerHeight));place();save()}else{setOpen(!isOpen())}}
+ fab.addEventListener("pointerup",end);fab.addEventListener("pointercancel",function(){down=false;fab.classList.remove("drag");place()});
+ fab.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();setOpen(!isOpen())}});
+ addEventListener("resize",place);setInterval(sync,1500);sync();
+}
+if(D.readyState==="loading")D.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
 </body>
